@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { LearningResourcesComponent } from './learning-resources/learning-resources.component';
+import { AuthComponent } from './auth/auth.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LearningResourcesComponent],
+  imports: [LearningResourcesComponent, AuthComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
