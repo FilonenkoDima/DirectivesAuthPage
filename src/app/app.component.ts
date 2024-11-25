@@ -4,11 +4,18 @@ import { AuthComponent } from './auth/auth.component';
 import { AuthService } from './auth/auth.service';
 import { NgIf } from '@angular/common';
 import { AuthDirective } from './auth/auth.directive';
+import { LogDirective } from './log.directive';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [LearningResourcesComponent, AuthComponent, NgIf, AuthDirective],
+  imports: [
+    LearningResourcesComponent,
+    AuthComponent,
+    NgIf,
+    AuthDirective,
+    LogDirective,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
